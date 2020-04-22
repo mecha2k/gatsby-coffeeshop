@@ -12,6 +12,10 @@ body {
   font-family: Verdana, Tahoma, sans-serif !important;
 }
 
+footer {
+  font-family: monospace, "JetBrains Mono", sans-serif;
+}
+
 h1,
 h2,
 h3,
