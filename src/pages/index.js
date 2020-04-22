@@ -1,17 +1,35 @@
 import React from "react"
-import { Link } from "gatsby"
-import { FaGulp } from "react-icons/fa"
+import { Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
+import Background from "../components/background"
+import Info from "../components/info"
+import Title from "../components/title"
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
-    <SEO title="Home" />
-    <h5>Hi people</h5>
-    <p>Welcome to your new Gatsby site.</p>
-    <FaGulp />
+    <SEO title="Home" keywords={["gatsby", "application", "react"]} />
+    <Background
+      img={props.data.img.childImageSharp.fluid}
+      title="regular joe's"
+      styleClass="default-background"
+    />
+    <Title title="our story" />
+    <Info />
   </Layout>
 )
+
+export const query = graphql`
+  {
+    img: file(relativePath: { eq: "default-background.jpeg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
