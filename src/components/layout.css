@@ -30,6 +30,15 @@ h6 {
   color: var(--yellow);
 }
 
+.btn-yellow {
+  color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.btn-yellow:hover {
+  background: lightgray;
+}
+
 .cart-icon {
   cursor: pointer;
   color: var(--yellow);
@@ -52,4 +61,8 @@ h6 {
 
 .btn-outline-info:hover {
   background: lightskyblue;
+}
+
+.menu {
+  background: var(--gray);
 }
