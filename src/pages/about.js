@@ -18,7 +18,7 @@ class About extends React.Component {
         <Background
           img={this.props.data.img.childImageSharp.fluid}
           title="about us"
-          styleClass="default-background"
+          styleClass="about-background"
         />
         <Info />
       </Layout>
