@@ -114,6 +114,7 @@ temp/
 **/*.back.*
 
 node_modules
+contentful
 
 *.sublime*
 
@@ -236,4 +237,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/node,react,windows,webstorm
-contentful/
+
