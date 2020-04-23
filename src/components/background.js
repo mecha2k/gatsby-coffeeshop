@@ -2,10 +2,6 @@ import React from "react"
 import BackgroundImage from "gatsby-background-image"
 
 class Background extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <BackgroundImage className={this.props.styleClass} fluid={this.props.img}>

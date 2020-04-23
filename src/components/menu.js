@@ -25,7 +25,16 @@ class Menu extends React.Component {
     }
   }
 
-  handleMenuItems = () => {}
+  handleMenuItems = (category) => {
+    const tempItems = [...this.state.items]
+    if (category === "all") this.setState({ menuItems: tempItems })
+    else {
+      const items = tempItems.filter((edge) => {
+        return edge.node.category === category
+      })
+      this.setState({ menuItems: items })
+    }
+  }
 
   render() {
     if (this.state.items.length < 1)
@@ -46,7 +55,7 @@ class Menu extends React.Component {
                   <button
                     type="button"
                     key={index}
-                    className="btn btn-yellow text-capitalize m-3"
+                    className="btn btn-info text-capitalize m-3"
                     onClick={() => {
                       this.handleMenuItems(category)
                     }}
