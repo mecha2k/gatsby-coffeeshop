@@ -7,10 +7,6 @@ import Background from "../components/background"
 import Info from "../components/info"
 
 class About extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <Layout>

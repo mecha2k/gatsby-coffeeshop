@@ -17,7 +17,7 @@ class Product extends React.Component {
                 data-item-name={this.props.node.title}
                 data-item-price={this.props.node.price}
                 data-item-image={this.props.node.image.fluid.src}
-                data-item-url="https://admiring-allen-cf3f19.netlify.app"
+                data-item-url="https://gatsby-coffeeshop-contentful.netlify.app"
               >
                 add to cart
               </button>

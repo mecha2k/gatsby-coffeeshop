@@ -16,14 +16,14 @@ class Navbar extends React.Component {
         {
           id: 1,
           path: "/",
-          text: "home",
+          text: "home"
         },
         {
           id: 2,
           path: "/about",
-          text: "about",
-        },
-      ],
+          text: "about"
+        }
+      ]
     }
   }
 
@@ -44,7 +44,7 @@ class Navbar extends React.Component {
         </button>
         <div className={this.state.css}>
           <ul className="navbar-nav mx-auto">
-            {this.state.links.map(function (link) {
+            {this.state.links.map(function(link) {
               return (
                 <li key={link.id} className="nav-item">
                   <Link to={link.path} className="nav-link text-capitalize">
@@ -54,7 +54,7 @@ class Navbar extends React.Component {
               )
             })}
             <li className="nav-item ml-sm-5">
-              <FaCartArrowDown className="cart-icon" />
+              <FaCartArrowDown className="cart-icon snipcart-checkout" />
             </li>
           </ul>
         </div>
