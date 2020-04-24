@@ -7,6 +7,7 @@ import Background from "../components/background"
 import Info from "../components/info"
 import Title from "../components/title"
 import Menu from "../components/menu"
+import Products from "../components/products"
 
 const IndexPage = (props) => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = (props) => (
     <Title title="our story" />
     <Info />
     <Menu items={props.data.menu} />
+    <Products />
   </Layout>
 )
 
