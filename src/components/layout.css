@@ -45,6 +45,10 @@ h6 {
   font-size: 2rem;
 }
 
+.contact {
+  background: var(--gray);
+}
+
 .default-background,
 .about-background {
   min-height: 100vh;
